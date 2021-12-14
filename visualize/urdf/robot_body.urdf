@@ -1,0 +1,12 @@
+<robot name="test_robot">
+ <link name="base_link"/>
+
+ <joit nname="body_joint" type="fixed">
+  <parent link="base_link"/>
+  <child  link="body_link"/>
+ </joint>
+ <link name ="body_link">
+  <visual>
+   <geometry>
+    <cylinder size="0.3,0.3,0.3"/>
+   </geometry>

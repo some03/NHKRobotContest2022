@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/utida/catkin_ws/src/NHK_RobotContest2022/test/main.cpp
+matplotlibcpp.h
+-
+spline.h
+/home/utida/catkin_ws/src/NHK_RobotContest2022/test/spline.h
+pure_pursuit.h
+/home/utida/catkin_ws/src/NHK_RobotContest2022/test/pure_pursuit.h
+vector
+-
+
+/home/utida/catkin_ws/src/NHK_RobotContest2022/test/pure_pursuit.h
+math.h
+-
+iostream
+-
+vector
+-
+stdio.h
+-
+algorithm
+-
+tuple
+-
+climits
+-
+
+/home/utida/catkin_ws/src/NHK_RobotContest2022/test/spline.h
+vector
+-
+math.h
+-
+iostream
+-
+
