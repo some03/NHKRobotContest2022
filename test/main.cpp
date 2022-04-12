@@ -59,17 +59,16 @@ int main(){
        */ 
         std::tie(target_ind,delta)=pursuit_control(st,tc,target_ind);
 
-        //速度の制御-------------------------------------
+        //速度-------------------------------------
         v=afterp.velocity[target_ind];
-
         //-----------------------------------------------------
 
         double vx=v*cos(delta);
         double vy=v*sin(delta);
 
-        //角度-------------------------------------------------
+        //角速度-------------------------------------------------
         if(afterp.angle[target_ind]!=0){
-            z=afterp.angle[target_ind]/0.1;//仮
+            z=afterp.angle[target_ind]-delta/0.1;//仮
         }
         //-----------------------------------------------------
        
@@ -78,9 +77,8 @@ int main(){
         m[2]=-vx*cos(M_PI/4+delta)+vy*sin(M_PI/4+delta)+r*z;
         m[3]=vx*cos(M_PI/4-delta)+vy*sin(M_PI/4-delta)+r*z;
        
-        nowx;
-        nowy;
-        nowz;
+        nowx=m[0]*cos(M_PI/4+delta)-m[1]*cos(M_PI/4-delta)-m[2]*cos(M_PI/4+delta)+m[3]*cos(M_PI/4-delta);
+        nowy=-m[0]*sin(M_PI/4+delta)-m[1]*sin(M_PI/4-delta)+m[2]*sin(M_PI/4+delta)+m[3]*sin(M_PI/4-delta);
 
         st.update(500,delta);
         

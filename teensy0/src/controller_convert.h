@@ -1,0 +1,81 @@
+#ifndef CONTROLLER
+#define CONTROLLER
+
+void convert(int& v_,int theta){
+    int v=v_; 
+    
+    if ((0<=theta_ && theta_<9) || (80<theta_ && theta_<99) || (170<theta_ && theta_<189) || (260<theta_ && theta_<279) || (350<theta_ && theta_<360)) v_ = map(v,0,255,0,255);
+    if (theta_ == 9 || theta_ == 99 || theta_ == 189 || theta_ == 279) v_ = map(v,0,258,0,255);
+    if (theta_ == 10 || theta_ == 100 || theta_ == 190 || theta_ == 280) v_ = map(v,0,259,0,255);
+    if (theta_ == 11 || theta_ == 101 || theta_ == 191 || theta_ == 281) v_ = map(v,0,260,0,255);
+    if (theta_ == 12 || theta_ == 102 || theta_ == 192 || theta_ == 282) v_ = map(v,0,260,0,255);
+    if (theta_ == 13 || theta_ == 103 || theta_ == 193 || theta_ == 283) v_ = map(v,0,261,0,255);
+    if (theta_ == 14 || theta_ == 104 || theta_ == 194 || theta_ == 284) v_ = map(v,0,263,0,255);
+    if (theta_ == 15 || theta_ == 105 || theta_ == 195 || theta_ == 285) v_ = map(v,0,264,0,255);
+    if (theta_ == 16 || theta_ == 106 || theta_ == 196 || theta_ == 286) v_ = map(v,0,265,0,255);
+    if (theta_ == 17 || theta_ == 107 || theta_ == 197 || theta_ == 287) v_ = map(v,0,266,0,255);
+    if (theta_ == 18 || theta_ == 108 || theta_ == 198 || theta_ == 288) v_ = map(v,0,268,0,255);
+    if (theta_ == 19 || theta_ == 109 || theta_ == 199 || theta_ == 289) v_ = map(v,0,270,0,255);
+    if (theta_ == 20 || theta_ == 110 || theta_ == 200 || theta_ == 290) v_ = map(v,0,272,0,255);
+    if (theta_ == 21 || theta_ == 111 || theta_ == 201 || theta_ == 291) v_ = map(v,0,275,0,255);
+    if (theta_ == 22 || theta_ == 112 || theta_ == 202 || theta_ == 292) v_ = map(v,0,276,0,255);
+    if (theta_ == 23 || theta_ == 113 || theta_ == 203 || theta_ == 293) v_ = map(v,0,278,0,255);
+    if (theta_ == 24 || theta_ == 114 || theta_ == 204 || theta_ == 294) v_ = map(v,0,279,0,255);
+    if (theta_ == 25 || theta_ == 115 || theta_ == 205 || theta_ == 295) v_ = map(v,0,283,0,255);
+    if (theta_ == 26 || theta_ == 116 || theta_ == 206 || theta_ == 296) v_ = map(v,0,284,0,255);
+    if (theta_ == 27 || theta_ == 117 || theta_ == 207 || theta_ == 297) v_ = map(v,0,288,0,255);
+    if (theta_ == 28 || theta_ == 118 || theta_ == 208 || theta_ == 298) v_ = map(v,0,290,0,255);
+    if (theta_ == 29 || theta_ == 119 || theta_ == 209 || theta_ == 299) v_ = map(v,0,292,0,255);
+    if (theta_ == 30 || theta_ == 120 || theta_ == 210 || theta_ == 300) v_ = map(v,0,296,0,255);
+    if (theta_ == 31 || theta_ == 121 || theta_ == 211 || theta_ == 301) v_ = map(v,0,300,0,255);
+    if (theta_ == 32 || theta_ == 122 || theta_ == 212 || theta_ == 302) v_ = map(v,0,302,0,255);
+    if (theta_ == 33 || theta_ == 123 || theta_ == 213 || theta_ == 303) v_ = map(v,0,304,0,255);
+    if (theta_ == 34 || theta_ == 124 || theta_ == 214 || theta_ == 304) v_ = map(v,0,309,0,255);
+    if (theta_ == 35 || theta_ == 125 || theta_ == 215 || theta_ == 305) v_ = map(v,0,311,0,255);
+    if (theta_ == 36 || theta_ == 126 || theta_ == 216 || theta_ == 306) v_ = map(v,0,316,0,255);
+    if (theta_ == 37 || theta_ == 127 || theta_ == 217 || theta_ == 307) v_ = map(v,0,323,0,255);
+    if (theta_ == 38 || theta_ == 128 || theta_ == 218 || theta_ == 308) v_ = map(v,0,325,0,255);
+    if (theta_ == 39 || theta_ == 129 || theta_ == 219 || theta_ == 309) v_ = map(v,0,328,0,255);
+    if (theta_ == 40 || theta_ == 130 || theta_ == 220 || theta_ == 310) v_ = map(v,0,333,0,255);
+    if (theta_ == 41 || theta_ == 131 || theta_ == 221 || theta_ == 311) v_ = map(v,0,329,0,255);
+    if (theta_ == 42 || theta_ == 132 || theta_ == 222 || theta_ == 312) v_ = map(v,0,329,0,255);
+    if (theta_ == 43 || theta_ == 133 || theta_ == 223 || theta_ == 313) v_ = map(v,0,328,0,255);
+    if (theta_ == 44 || theta_ == 134 || theta_ == 224 || theta_ == 314) v_ = map(v,0,331,0,255);
+    if (theta_ == 45 || theta_ == 135 || theta_ == 225 || theta_ == 315) v_ = map(v,0,334,0,255);
+    if (theta_ == 46 || theta_ == 136 || theta_ == 226 || theta_ == 316) v_ = map(v,0,328,0,255);
+    if (theta_ == 47 || theta_ == 137 || theta_ == 227 || theta_ == 317) v_ = map(v,0,323,0,255);
+    if (theta_ == 48 || theta_ == 138 || theta_ == 228 || theta_ == 318) v_ = map(v,0,326,0,255);
+    if (theta_ == 49 || theta_ == 139 || theta_ == 229 || theta_ == 319) v_ = map(v,0,332,0,255);
+    if (theta_ == 50 || theta_ == 140 || theta_ == 230 || theta_ == 320) v_ = map(v,0,330,0,255);
+    if (theta_ == 51 || theta_ == 141 || theta_ == 231 || theta_ == 321) v_ = map(v,0,325,0,255);
+    if (theta_ == 52 || theta_ == 142 || theta_ == 232 || theta_ == 322) v_ = map(v,0,320,0,255);
+    if (theta_ == 53 || theta_ == 143 || theta_ == 233 || theta_ == 323) v_ = map(v,0,315,0,255);
+    if (theta_ == 54 || theta_ == 144 || theta_ == 234 || theta_ == 324) v_ = map(v,0,313,0,255);
+    if (theta_ == 55 || theta_ == 145 || theta_ == 235 || theta_ == 325) v_ = map(v,0,310,0,255);
+    if (theta_ == 56 || theta_ == 146 || theta_ == 236 || theta_ == 326) v_ = map(v,0,306,0,255);
+    if (theta_ == 57 || theta_ == 147 || theta_ == 237 || theta_ == 327) v_ = map(v,0,301,0,255);
+    if (theta_ == 58 || theta_ == 148 || theta_ == 238 || theta_ == 328) v_ = map(v,0,299,0,255);
+    if (theta_ == 59 || theta_ == 149 || theta_ == 239 || theta_ == 329) v_ = map(v,0,297,0,255);
+    if (theta_ == 60 || theta_ == 150 || theta_ == 240 || theta_ == 330) v_ = map(v,0,293,0,255);
+    if (theta_ == 61 || theta_ == 151 || theta_ == 241 || theta_ == 331) v_ = map(v,0,289,0,255);
+    if (theta_ == 62 || theta_ == 152 || theta_ == 242 || theta_ == 332) v_ = map(v,0,287,0,255);
+    if (theta_ == 63 || theta_ == 153 || theta_ == 243 || theta_ == 333) v_ = map(v,0,285,0,255);
+    if (theta_ == 64 || theta_ == 154 || theta_ == 244 || theta_ == 334) v_ = map(v,0,282,0,255);
+    if (theta_ == 65 || theta_ == 155 || theta_ == 245 || theta_ == 335) v_ = map(v,0,280,0,255);
+    if (theta_ == 66 || theta_ == 156 || theta_ == 246 || theta_ == 336) v_ = map(v,0,277,0,255);
+    if (theta_ == 67 || theta_ == 157 || theta_ == 247 || theta_ == 337) v_ = map(v,0,275,0,255);
+    if (theta_ == 68 || theta_ == 158 || theta_ == 248 || theta_ == 338) v_ = map(v,0,274,0,255);
+    if (theta_ == 69 || theta_ == 159 || theta_ == 249 || theta_ == 339) v_ = map(v,0,271,0,255);
+    if (theta_ == 70 || theta_ == 160 || theta_ == 250 || theta_ == 340) v_ = map(v,0,270,0,255);
+    if (theta_ == 71 || theta_ == 161 || theta_ == 251 || theta_ == 341) v_ = map(v,0,268,0,255);
+    if (theta_ == 72 || theta_ == 162 || theta_ == 252 || theta_ == 342) v_ = map(v,0,267,0,255);
+    if (theta_ == 73 || theta_ == 163 || theta_ == 253 || theta_ == 343) v_ = map(v,0,266,0,255);
+    if (theta_ == 74 || theta_ == 164 || theta_ == 254 || theta_ == 344) v_ = map(v,0,264,0,255);
+    if (theta_ == 75 || theta_ == 165 || theta_ == 255 || theta_ == 345) v_ = map(v,0,263,0,255);
+    if (theta_ == 76 || theta_ == 166 || theta_ == 256 || theta_ == 346) v_ = map(v,0,261,0,255);
+  if (theta_ == 77 || theta_ == 167 || theta_ == 257 || theta_ == 347) v_ = map(v,0,261,0,255);
+  if (theta_ == 78 || theta_ == 168 || theta_ == 258 || theta_ == 348) v_ = map(v,0,260,0,255);
+  if (theta_ == 79 || theta_ == 169 || theta_ == 259 || theta_ == 349) v_ = map(v,0,259,0,255);
+  if (theta_ == 80 || theta_ == 170 || theta_ == 260 || theta_ == 350) v_ = map(v,0,258,0,255);
+} 
+#endif
